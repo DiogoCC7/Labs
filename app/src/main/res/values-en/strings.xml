@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Labs</string>
+    <string name="btnGoAct1">Activity 2</string>
+    <string name="btnGoAct2">Activity 1</string>
+    <string name="txtAct1">I\'m on Activity 1</string>
+    <string name="txtAct2">I\'m on Activity 2</string>
+    <string name="txtStudentInfo">Diogo Assunção nº 28257</string>
+    <string name="txtStudentInfoTitle">Information</string>
+    <string name="txtWelcome">Hello!</string>
+</resources>

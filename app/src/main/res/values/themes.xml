@@ -6,4 +6,7 @@
     </style>
 
     <style name="Theme.Labs" parent="Base.Theme.Labs" />
+    <style name="BtnStyle">
+        <item name="backgroundTint">@color/black</item>
+    </style>
 </resources>
