@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.add.AddFragment">
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         tools:layout_editor_absoluteX="0dp"
+         tools:layout_editor_absoluteY="0dp"
+         tools:ignore="UselessParent">
+
+          <ScrollView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              >
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:padding="40dp"
+                  >
+
+                  <TextView
+                      android:id="@+id/textView1"
+                      android:gravity="center"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="start"
+                      android:text="@string/add_title"
+                      android:textSize="20sp"
+                      android:textStyle="bold" />
+
+                  <RelativeLayout
+                      android:layout_marginTop="40dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      >
+
+                    <LinearLayout
+                        android:id="@+id/layout_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/add_et_note_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autofillHints="name"
+                            android:inputType="text"
+                            tools:ignore="LabelFor" />
+
+                        <DatePicker
+                            android:id="@+id/datePicker"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:calendarViewShown="false"
+                            android:datePickerMode="spinner"
+                            android:layout_gravity="center" />
+                    </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_below="@+id/layout_1"
+                         android:layout_height="match_parent"
+                         android:orientation="vertical">
+                         <Button
+                             android:id="@+id/add_btn_done"
+                             android:layout_marginTop="10dp"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:text="@string/add_done"
+                             style="@style/BtnStyle"
+                             />
+
+                         <Button
+                             android:id="@+id/add_btn_cancel"
+                             android:layout_marginTop="10dp"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:text="@string/add_cancel"
+                             style="@style/BtnStyle" />
+                     </LinearLayout>
+
+                  </RelativeLayout>
+              </LinearLayout>
+          </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

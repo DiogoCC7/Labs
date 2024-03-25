@@ -17,12 +17,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/txtWelcome"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="start"
+            android:layout_gravity="center"
             android:text="@string/txtAct1"
+            android:layout_marginTop="10dp"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -38,6 +54,13 @@
             android:layout_height="wrap_content"
             android:text="@string/btnGoAct1"
             style="@style/BtnStyle"/>
-    </LinearLayout>
 
+        <Button
+            android:id="@+id/btnGoToAct3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/act1_go_crud"
+            style="@style/BtnStyle"
+            />    </LinearLayout>
+    
 </androidx.constraintlayout.widget.ConstraintLayout>

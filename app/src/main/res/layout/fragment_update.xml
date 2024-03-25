@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.update.UpdateFragment">
+
+    <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         tools:layout_editor_absoluteX="0dp"
+         tools:layout_editor_absoluteY="0dp"
+         tools:ignore="UselessParent">
+
+          <ScrollView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              >
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:padding="40dp"
+                  >
+
+                  <TextView
+                      android:id="@+id/update_title"
+                      android:gravity="center"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="start"
+                      android:text="@string/update_title"
+                      android:textSize="20sp"
+                      android:textStyle="bold" />
+
+                  <LinearLayout
+                      android:layout_marginTop="40dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      >
+
+                      <EditText
+                          android:id="@+id/update_et_note"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:autofillHints="name"
+                          android:inputType="text"
+                          style="@style/BtnStyle"
+                          tools:ignore="LabelFor" />
+
+                      <DatePicker
+                          android:id="@+id/datePicker"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:calendarViewShown="false"
+                          android:datePickerMode="spinner"
+                          android:layout_gravity="center" />
+
+                      <Button
+                          android:id="@+id/update_btn_done"
+                          android:layout_marginTop="10dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="@string/update_change"
+                          style="@style/BtnStyle"
+                          />
+
+                      <Button
+                          android:id="@+id/update_btn_rm"
+                          android:layout_marginTop="10dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="@string/update_remove"
+                          style="@style/BtnStyle"
+                          />
+
+                      <Button
+                          android:id="@+id/update_btn_cancel"
+                          android:layout_marginTop="10dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="@string/add_cancel"
+                          style="@style/BtnStyle"
+                          />
+
+                  </LinearLayout>
+              </LinearLayout>
+          </ScrollView>
+    </RelativeLayout>
+</FrameLayout>
