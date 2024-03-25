@@ -7,4 +7,6 @@
     <string name="txtStudentInfo">Diogo Assunção nº 28257</string>
     <string name="txtStudentInfoTitle">Informação</string>
     <string name="txtWelcome">Hello!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
